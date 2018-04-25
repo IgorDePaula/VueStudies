@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vkalert class="danger curve full outline" :closable="true">  teste de alerta </vkalert>
+    <vkalert :class="classes" :closable="true">  teste de alerta </vkalert>
   </div>
 </template>
 
@@ -9,6 +9,11 @@ export default {
   name: 'App',
   mounted () {
     this.$on('closed', () => console.log('closed'))
+  },
+  data () {
+    return {
+      classes: ['danger', 'curve', 'full', 'outline']
+    }
   }
 }
 </script>

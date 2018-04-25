@@ -12,7 +12,7 @@ export default {
     }
   },
   render (h) {
-    const content = [h('div', this.$slots.default)]
+    const content = [this.$slots.default]
     if (this.closable) {
       content.push(h(VKIcon, { props: { closeable: this.closable },
         on: {

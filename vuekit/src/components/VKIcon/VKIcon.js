@@ -1,3 +1,4 @@
+import './_icon.styl'
 export default {
   name: 'vkicon',
   props: {
@@ -13,6 +14,7 @@ export default {
       props.on = {
         click: () => self.$emit('vkicon-close')
       }
+      props.class = ['closeable']
     }
     return h('div', props, content)
   }
