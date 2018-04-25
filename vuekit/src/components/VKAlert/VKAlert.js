@@ -1,5 +1,6 @@
 import closeable from '../../mixins/closeable'
 import VKIcon from '../VKIcon'
+import './_alert.styl'
 export default {
   name: 'vkalert',
   props: {
@@ -13,7 +14,6 @@ export default {
   render (h) {
     const content = [h('div', this.$slots.default)]
     if (this.closable) {
-      const self = this
       content.push(h(VKIcon, { props: { closeable: this.closable },
         on: {
           'vkicon-close': () => { this.closed = true }

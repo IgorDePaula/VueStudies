@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vkalert :closable="true">  teste de alerta </vkalert>
+    <vkalert class="danger curve full outline" :closable="true">  teste de alerta </vkalert>
   </div>
 </template>
 

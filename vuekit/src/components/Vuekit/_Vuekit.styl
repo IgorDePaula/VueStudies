@@ -1,0 +1,36 @@
+$danger = #f00
+$warning = #fd0
+$success = #0f0
+$info = #00f
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+$micro = 25%
+$smd = 50%
+$com = 75%
+$full = 100%
+
+.outline
+  &.info
+    border:1px solid $info
+  &.warning
+    border:1px solid $warning
+  &.danger
+    border:1px solid $danger
+  &.success
+    border:1px solid $success
+
+.curve
+  border-radius(5px)
+
+.smd
+  width $smd
+.micro
+  width $micro
+.full
+  width $full
+.com
+  width $com

@@ -1,3 +1,5 @@
+import './components/stile.styl'
+
 import * as components from './components'
 
 function Vuekit (Vue, args) {
