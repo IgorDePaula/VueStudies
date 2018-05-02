@@ -1,4 +1,5 @@
 import './_icon.styl'
+
 export default {
   name: 'vkicon',
   props: {

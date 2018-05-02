@@ -12,7 +12,7 @@ export default {
   },
   data () {
     return {
-      classes: ['danger', 'curve', 'full', 'outline']
+      classes: ['success', 'curve', 'full', 'outline']
     }
   }
 }
